@@ -1,0 +1,76 @@
+:root {
+    --tan: rgb(220, 200, 172);
+    --dark-gray: rgb(58, 58, 58);
+    --orange: rgb(255, 155, 111);
+    --warm-gray: rgb(71, 68, 69);
+}
+
+body {
+margin: 0;
+font-family: sans-serif;
+background-color: var(--tan);
+color: var(--warm-gray);
+}
+
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+background-color: var(--dark-gray);
+color: var(--tan);
+}
+
+.logo {
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+.nav-toggle {
+display: none;
+font-size: 1.5rem;
+background: none;
+border: none;
+color: var(--tan);
+cursor: pointer;
+}
+
+.nav-menu {
+list-style: none;
+display: flex;
+gap: 1.5rem;
+margin: 0;
+padding: 0;
+}
+
+.nav-menu a {
+color: var(--tan);
+text-decoration: none;
+font-weight: 500;
+}
+
+.nav-menu a:hover {
+color: var(--orange);
+}
+
+@media (max-width: 768px) {
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-gray);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid var(--warm-gray);
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-toggle {
+    display: block;
+}
+}

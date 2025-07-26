@@ -1,26 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
-    <title>Tank-Blog-34</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Tank-Blog-34</title>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-          <div class="logo">Tank Blog</div>
-          <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-          <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="guides.html">Guides</a></li>
-            <li><a href="reviews.html">Tank Reviews</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      
+  <header>
+    <nav class="nav">
+      <img class="logo-img" src="./logo.png" alt="Tank-Blog-34 Logo">
+      <div class="logo-text">Tank-Blog-34</div>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/guides.html">Guides</a></li>
+        <li><a href="./pages/reviews.html">Tank Reviews</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="index-container">
+    <div class="index-inner">
+      <section class="hero">
+        <h1>Welcome to Tank-Blog-34</h1>
+        <p>Your source for grounded gameplay tips, historical context, and no-nonsense tank insights.</p>
+      </section>
+
+      <section class="featured">
+        <div class="card">
+          <img src="./assets/map_banner.jpg" alt="Map Awareness Guide" />
+          <div class="card-text">
+            <h2>Featured Guide</h2>
+            <h3>Map Awareness Basics</h3>
+            <p>Learn how positioning, minimap reading, and map control win battles.</p>
+            <a href="./pages/guides.html">Read Guide →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./assets/tiger_1.jpg" alt="Tiger I Tank Review" />
+          <div class="card-text">
+            <h2>Featured Review</h2>
+            <h3>Tiger I</h3>
+            <p>Classic German heavy. High firepower, high expectations. Here's how to play it right.</p>
+            <a href="./pages/reviews.html">Read Review →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="minimal-footer">
+    <div class="social-icons small">
+      <a href="https://reddit.com" target="_blank"><img src="./assets/reddit.svg" alt="Reddit"></a>
+      <a href="https://twitch.tv" target="_blank"><img src="./assets/twitch.svg" alt="Twitch"></a>
+      <a href="https://youtube.com" target="_blank"><img src="./assets/youtube.svg" alt="YouTube"></a>
+    </div>
+  </footer>
 </body>
 </html>

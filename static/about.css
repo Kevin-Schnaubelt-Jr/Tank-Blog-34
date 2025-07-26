@@ -1,0 +1,29 @@
+.about-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
+  background-color: var(--tan);
+  color: var(--warm-gray);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.about-container h1,
+.about-container h2 {
+  border-bottom: 2px solid var(--dark-gray);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.about-container p {
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+/* Optional: Make spacing more fluid on mobile */
+@media (max-width: 600px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+}

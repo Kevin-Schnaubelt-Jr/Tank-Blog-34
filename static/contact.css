@@ -1,0 +1,27 @@
+.contact-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--warm-gray);
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.social-icons img:hover {
+  filter: grayscale(0%);
+}
+
+.social-icons.large img {
+  width: 64px;
+  height: 64px;
+}
